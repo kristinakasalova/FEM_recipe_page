@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Young Serif";
+    font-weight: 400;
+    src: 
+    local("Young Serif"),
+    url("./assets/fonts/young-serif/YoungSerif-Regular.ttf") format("ttf"),
+    url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "Outfit";
+    font-weight: 400;
+    src: 
+    local("Outfit"),
+    url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("ttf"),
+    url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Outfit";
+    font-weight: 600;
+    src: 
+    local("Outfit"),
+    url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("ttf"),
+    url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Outfit";
+    font-weight: 700;
+    src: 
+    local("Outfit"),
+    url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("ttf"),
+    url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+    font-style: normal;
+}
+
+:root {
+    --fontSize: 16px;
+    --ffsserif: "Outfit", sans-serif;
+    --ffwserif: "Young Serif",serif;
+    --clrPrimNut:hsl(14, 45%, 36%);
+    --clrPrimRasp: hsl(332, 51%, 32%);
+    --clrNeutWhite:hsl(0, 0%, 100%);
+   --clrNeutRoWhi:hsl(330, 100%, 98%);
+    --clrNeutEgg: hsl(30, 54%, 90%);
+    --clrNeutLGrey: hsl(30, 18%, 87%);
+    --clrNeutWBrown: hsl(30, 10%, 34%);
+    --clrNeurDChar: hsl(24, 5%, 18%);
+}
+
+html {
+    background-color: var(--clrNeutEgg);
+}
+body {
+    margin: auto;
+    max-width: 100vw;
+    background-color: var(--clrNeutWhite) ;
+    font-family: "Outfit", sans-serif;
+    border-radius: 1rem;
+    color: var(--clrNeutWBrown);
+}
+img {
+    max-width: 100vw;
+    object-fit: contain;
+  
+}
+
+main {
+    padding: 0;
+}
+section, header, article {
+    padding: 0 1.5rem;
+}
+
+h1 {
+    color: var(--clrNeurDChar);
+    font-family: "Young Serif", serif;
+    margin-top: 0;
+    padding-top: 2rem;
+    }
+
+p, li, ul {
+    color: var(--clrNeutWBrown);
+    font-weight: 400;
+    font-size: small;
+    line-height: 1.5rem;
+}
+
+h2 {
+    color: var(--clrPrimNut);
+    font-family: "Young Serif", serif;
+
+}
+.time h3 {
+    color: var(--clrPrimRasp);
+    font-family: "Outfit", sans-serif;
+}
+
+.time {
+    background-color: var(--clrNeutRoWhi) ;
+    padding: 1rem;
+    line-height: 1.2rem;
+    border-radius: 0.8rem;
+    margin: 1.5rem;
+}
+
+.time li {
+    color:  var(--clrPrimNut);
+
+}
+.bold {
+font-weight: 700;
+}
+
+/* .ingredients {
+} */
+
+article {
+    border-top: 0.1rem solid var(--clrNeutLGrey);
+    border-bottom: 0.1rem solid var(--clrNeutLGrey);
+}
+
+table {
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+td{
+    border-bottom: 0.1rem solid var(--clrNeutLGrey);
+    font-size: smaller;
+    line-height: 3vh;
+    padding-left: 2vw;
+}
+td .bold {
+    color: var(--clrPrimRasp);
+    font-weight: 800;
+}
+td.fat {
+    border-bottom: none;
+}
+
+@media only screen and (min-width: 375px) {
+body {
+    max-width: 50vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+    main {
+        padding: 2rem;
+
+}
+   img {
+    max-width: 45vw;
+    border-radius: 1rem;
+    object-fit: contain;
+    /* padding: 2rem; */
+}
+.time {
+    margin: 0;
+}
+.attribution {
+    position: fixed;
+    bottom: 0%;
+}
+}
+/* 
+- padding okolo hlavneho obrazku
+- skontrolovat mobil */
